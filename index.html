@@ -620,9 +620,15 @@ A
     <h1>BDT <span id="TotalPrice">0</span></h1>
 </div>
 
-<div class="flex items-center">
-    <input type="" class="pr-24 py-2 pl-1" placeholder="Have any copupon?">
-    <button class="btn btn-sm bg-[#1DD100] -ml-[68px] text-white " disabled>Apply</button>
+<div class="flex justify-between items-center font-bold " class="hidden" id="DiscountContainer">
+    <h1 id="discount15Display"></h1>
+    <h1 id="discount15DisplayTaka"></h1>
+</div>
+
+
+<div class="flex items-center justify-center">
+    <input type="" class="pr-24 py-2 pl-1" placeholder="Have any copupon?" id="CopuponCode">
+    <button class="btn btn-sm bg-[#1DD100] -ml-[68px] text-white " disabled id="ApplyButton">Apply</button>
 </div>
 
 <div class="flex justify-between items-center *:font-bold">

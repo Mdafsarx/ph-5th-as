@@ -29,3 +29,4 @@ getId(id).innerText=value
 function setBackgroundColor(element){
     element.classList.add('bg-[#1DD100]')
 }
+
