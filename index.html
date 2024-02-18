@@ -20,7 +20,7 @@ gap: 10px;
     }
 </style>
 </head>
-<body onload="reload()">
+<body>
     
 
 
@@ -620,7 +620,7 @@ A
     <h1>BDT <span id="TotalPrice">0</span></h1>
 </div>
 
-<div class="flex justify-between items-center font-bold " class="hidden" id="DiscountContainer">
+<div class="flex justify-between items-center font-bold hidden "  id="DiscountContainer">
     <h1 id="discount15Display"></h1>
     <h1 id="discount15DisplayTaka"></h1>
 </div>
@@ -647,21 +647,20 @@ A
 
 <!-- from div -->
 
-<div>
+<div class="space-y-5">
 
-<form action="" class="space-y-4">
 
 
     <label for="" class="block font-bold ">Passenger Name*</label>
-    <input type="text" placeholder="Enter your name" class="input input-bordered w-full max-w-xs outline-none " required />
+    <input type="text" placeholder="Enter your name" class="input input-bordered w-full max-w-xs outline-none " />
     
     <label for="" class="block font-bold">Phone Number*</label>
-    <input type="number" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs outline-none" required />
+    <input type="number" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs outline-none"  id="NumberInput"/>
     
     <label for="" class="block font-bold">Email ID</label>
-    <input type="email" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs outline-none"  required/>
+    <input type="email" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs outline-none"/>
     
-    <button class="btn w-full text-white bg-[#1DD100]" disabled>Next</button>
+    <button class="btn w-full text-white bg-[#1DD100]" disabled id="NextBtn">Next</button>
     
     <div class="flex ">
         <button class="btn  btn-link text-gray-600">Terms and Conditions</button>
@@ -670,7 +669,6 @@ A
     
 
 
-</form>
 
 
 
@@ -687,7 +685,11 @@ A
 </main>
 
 
+<!-- success message -->
 
+<section>
+    
+</section>
 
 
 

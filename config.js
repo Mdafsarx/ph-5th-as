@@ -16,9 +16,8 @@ let seatsButton=getClass('seats-Button');
  seatsButton=Array.from(seatsButton);
 
 
-
  const array=[];
-
+let sum=0;
  seatsButton.forEach(seatButton => {
     // seat btn onclick event
     seatButton.addEventListener('click',()=>{
@@ -51,7 +50,7 @@ getId('SeatSelectedContainer').appendChild(p3);
 // seat value setting
 const seatCountValue=getInnerText('SeatBookCount');
 const  newSeatBookCount=seatCountValue+1;
-setInnerText('SeatBookCount',newSeatBookCount)
+setInnerText('SeatBookCount',newSeatBookCount);
 
 
 // seat left 
@@ -78,6 +77,7 @@ setInnerText('grandTotal',TotalBusTicketPrice);
 // apply button and copupon input
 
 if(newSeatBookCount>=4){
+    
     getId('ApplyButton').removeAttribute('disabled');
     getId('ApplyButton').addEventListener('click',()=>{
         const InputValue=getId('CopuponCode').value ;
@@ -100,6 +100,9 @@ setInnerText('discount15DisplayTaka',discount15);
             setInnerText('discount15DisplayTaka',discount15);
 
         }
+        else{
+            return alert('Invalid input')
+        }
 
 
     })
@@ -110,7 +113,18 @@ setInnerText('discount15DisplayTaka',discount15);
 
 
 
+// number and apply button
 
+
+// ////////////// due some work
+const NumberValue=getId('NumberInput').value;
+const seatUpdatedValue=getInnerText('SeatBookCount');
+sum=sum+seatCountValue;
+if(seatUpdatedValue>0 && NumberValue.length>=5){
+
+getId('NextBtn').removeAttribute('disabled');
+
+}
 
 
  }) 
@@ -118,3 +132,13 @@ setInnerText('discount15DisplayTaka',discount15);
 })
 
 
+//  Next button;
+
+getId('NextBtn').addEventListener('click',()=>{
+
+document.querySelector('header').classList.add('hidden');
+document.querySelector('main').classList.add('hidden')
+
+})
+    
+    console.log(sum)
