@@ -6,7 +6,19 @@
     <title></title>
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<style>
+    .seats-grid{
+        display: grid;
+        grid-template-columns: repeat(22,1fr);
+        gap: 20px;
+    }
+    @media screen and (max-width:600px) {
+        .seats-grid{
+gap: 10px;
 
+        }
+    }
+</style>
 </head>
 <body class="">
     
@@ -242,7 +254,430 @@
 
 
 
+<!-- ///////////// -->
+    <div class=" bg-white rounded-2xl my-10 flex flex-col lg:flex-row">
+
+        <!-- seats abcd.... -->
+<div class="lg:w-[70%] p-5">
+
+<div>
+    <h1 class="text-xl font-semibold border-dashed border-b-2 pb-2">Select Your Seat</h1>
+
+    <div class="flex justify-between py-2 border-dashed border-b-2">
+        <div class="flex space-x-1 items-center">
+            <img src="./images/seat-gray.png" alt="">
+            <h1 class="font-medium">Available</h1>
+        </div>
+
+        <div class="flex space-x-1 items-center">
+            <img src="./images/seat-green-filled.png" alt="">
+            <h1 class="font-medium">Selected</h1>
+        </div>
+
+    </div>
+
+<div class="text-end py-3">
+    <button class="btn "><img src="wheel.png" alt=""></button>
+</div>
+
+</div>
+
+<!-- //////////////// -->
+<div class=" seats-grid items-center">
+
+
+<!-- seat A -->
+<div class="col-span-1">
+A
+</div>
+
+<div class="col-span-4">
+    <button class="btn seats-Button w-full">A1</button>
+</div>
+
+<div class="col-span-4 ">
+    <button class="btn seats-Button w-full">A2</button>
+</div>
+
+<div class="col-span-5">
+
+</div>
+
+<div class="col-span-4">
+    <button class="btn seats-Button w-full">A3</button>
+</div>
+
+<div class="col-span-4">
+    <button class="btn seats-Button w-full">A4</button>
+</div>
+
+<!-- seat A end -->
+
+
+<!-- seat b  -->
+
+<div class="col-span-1">
+    B
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">B1</button>
+    </div>
+    
+    <div class="col-span-4 ">
+        <button class="btn seats-Button w-full">B2</button>
+    </div>
+    
+    <div class="col-span-5">
+    
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">B3</button>
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">B4</button>
+    </div>
+
+<!-- seat b end -->
+
+
+<!-- seat c  -->
+
+<div class="col-span-1">
+    C
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">C1</button>
+    </div>
+    
+    <div class="col-span-4 ">
+        <button class="btn seats-Button w-full">C2</button>
+    </div>
+    
+    <div class="col-span-5">
+    
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">C3</button>
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">C4</button>
+    </div>
+
+<!-- seat c end -->
+
+
+<!-- seat d  -->
+
+<div class="col-span-1">
+    D
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">D1</button>
+    </div>
+    
+    <div class="col-span-4 ">
+        <button class="btn seats-Button w-full">D2</button>
+    </div>
+    
+    <div class="col-span-5">
+    
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">D3</button>
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">D4</button>
+    </div>
+
+<!-- seat d end -->
+
+
+<!-- seat E  -->
+
+<div class="col-span-1">
+    E
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">E1</button>
+    </div>
+    
+    <div class="col-span-4 ">
+        <button class="btn seats-Button w-full">E2</button>
+    </div>
+    
+    <div class="col-span-5">
+    
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">E3</button>
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">E4</button>
+    </div>
+
+<!-- seat E end -->
+
+
+<!-- seat F  -->
+
+<div class="col-span-1">
+    F
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">F1</button>
+    </div>
+    
+    <div class="col-span-4 ">
+        <button class="btn seats-Button w-full">F2</button>
+    </div>
+    
+    <div class="col-span-5">
+    
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">F3</button>
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">F4</button>
+    </div>
+
+<!-- seat F end -->
+
+
+<!-- seat G  -->
+
+<div class="col-span-1">
+    G
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">G1</button>
+    </div>
+    
+    <div class="col-span-4 ">
+        <button class="btn seats-Button w-full">G2</button>
+    </div>
+    
+    <div class="col-span-5">
+    
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">G3</button>
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">G4</button>
+    </div>
+
+<!-- seat G end -->
+
+
+<!-- seat H  -->
+
+<div class="col-span-1">
+    H
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">H1</button>
+    </div>
+    
+    <div class="col-span-4 ">
+        <button class="btn seats-Button w-full">H2</button>
+    </div>
+    
+    <div class="col-span-5">
+    
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">H3</button>
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">H4</button>
+    </div>
+
+<!-- seat H end -->
+
+
+<!-- seat I  -->
+
+<div class="col-span-1">
+    I
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">I1</button>
+    </div>
+    
+    <div class="col-span-4 ">
+        <button class="btn seats-Button w-full">I2</button>
+    </div>
+    
+    <div class="col-span-5">
+    
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">I3</button>
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">I4</button>
+    </div>
+
+<!-- seat I end -->
+
+
+<!-- seat J  -->
+
+<div class="col-span-1">
+    J
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">J1</button>
+    </div>
+    
+    <div class="col-span-4 ">
+        <button class="btn seats-Button w-full">J2</button>
+    </div>
+    
+    <div class="col-span-5">
+    
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">J3</button>
+    </div>
+    
+    <div class="col-span-4">
+        <button class="btn seats-Button w-full">J4</button>
+    </div>
+
+<!-- seat J end -->
+
+
+<!-- ///////////////////// -->
+</div>
+<!-- ///////////// -->
+
+</div>
+<!-- seats end -->
+
+<!-- form and  total div -->
+
+<div class="lg:w-[30%] lg:border-dashed lg:border-l-2 ">
+
+<!-- Select Your Seat  -->
+    <div class="p-5">
+<!-- title -->
+        <div class="border-dashed border-b-2 pb-1">
+            <h1 class="text-xl lg:text-2xl text-balance font-medium">Select Your Seat</h1>
+        </div>
+        
+
+        <!-- total and grand total section -->
+<div class="bg-[#F7F8F8] p-7 my-5 rounded-xl">
+
+    <!-- 1st line -->
+    <div class="flex justify-between font-bold py-2 border-dashed border-b-2">
+    <p>Seat <span>2</span></p>
+<p>Class</p>
+<p>Price</p>
+    </div>
+
+<!-- 2nd line -->
+<!-- seat selected container -->
+<div class="flex justify-between text-sm py-2 border-b-2" id="SeatSelectedContainer">
+    <p>C2</p>
+<p>Economoy</p>
+<p>550</p>
+    </div>
+
+
+    <!-- 3rd line -->
+
+    <div class="py-3 space-y-4">
+
+<div class="flex justify-between items-center font-bold">
+    <h1>Total Price</h1>
+    <h1>BDT <span>1100</span></h1>
+</div>
+
+<div class="flex items-center">
+    <input type="" class="pr-24 py-2 pl-1" placeholder="Have any copupon?">
+    <button class="btn btn-sm bg-[#1DD100] -ml-[68px] text-white ">Apply</button>
+</div>
+
+<div class="flex justify-between items-center *:font-bold">
+    <h1>Grand Total</h1>
+    <h1>BDT <span>1100</span></h1>
+</div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+<!-- from div -->
+
+<div>
+
+<form action="" class="space-y-4">
+
+
+    <label for="" class="block font-bold ">Passenger Name*</label>
+    <input type="text" placeholder="Enter your name" class="input input-bordered w-full max-w-xs outline-none " required />
+    
+    <label for="" class="block font-bold">Phone Number*</label>
+    <input type="number" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs outline-none" required />
+    
+    <label for="" class="block font-bold">Email ID</label>
+    <input type="email" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs outline-none"  required/>
+    
+    <button class="btn w-full text-white bg-[#1DD100]">Next</button>
+    
+    <div class="flex ">
+        <button class="btn  btn-link text-gray-600">Terms and Conditions</button>
+        <button class="btn  btn-link text-gray-500">Cancellation Policy</button>
+    </div>
+    
+
+
+</form>
+
+
+
+</div>
+
+
+
+    </div>
+
 </section>
+
 
 
 
