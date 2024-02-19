@@ -77,7 +77,7 @@ setInnerText('grandTotal',TotalBusTicketPrice);
 
 
 
-// extra mark start here
+// extra mark start here ///
 
 
 // apply button and copupon input
@@ -121,18 +121,28 @@ getId('copuponAndApply').classList.add('hidden');
 
 
 
-// number and apply button
+// number and apply button disabled and able 
 
+getId('NumberInput').addEventListener('input',(e)=>{
 
-// ////////////// due some work
+const Number=e.target.value;
+if(newSeatBookCount>0&&Number.length>5)
+{
+
+    getId('NextBtn').removeAttribute('disabled')
+
+}
+
+})
+
 const NumberValue=getId('NumberInput').value;
-const seatUpdatedValue=getInnerText('SeatBookCount');
-sum=sum+seatCountValue;
-if(seatUpdatedValue>0 && NumberValue.length>=5){
+console.log(NumberValue);
+if(newSeatBookCount>0 && NumberValue.length>=5){
 
 getId('NextBtn').removeAttribute('disabled');
 
 }
+
 
 
  }) 
@@ -160,3 +170,4 @@ getId('footer').classList.remove('hidden')
 getId('success').classList.add('hidden')
 
 });
+
