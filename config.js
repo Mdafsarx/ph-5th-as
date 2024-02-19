@@ -138,6 +138,7 @@ getId('NextBtn').addEventListener('click',()=>{
 
 document.querySelector('header').classList.add('hidden');
 document.querySelector('main').classList.add('hidden');
+getId('footer').classList.add('hidden')
 getId('success').classList.remove('hidden')
 
 })
@@ -147,5 +148,7 @@ getId('success').classList.remove('hidden')
 getId('Continue').addEventListener('click',()=>{
     document.querySelector('header').classList.remove('hidden');
 document.querySelector('main').classList.remove('hidden');
+getId('footer').classList.remove('hidden')
 getId('success').classList.add('hidden')
-})
+
+});
