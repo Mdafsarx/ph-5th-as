@@ -22,10 +22,16 @@ let sum=0;
     // seat btn onclick event
     seatButton.addEventListener('click',()=>{
 
+        // cannot book more then 4 ticket
+        if(array.length===4){
+            return alert(`you can't buy more then 4 ticket`)
+                }
+
 // You cannot buy this ticket again
  const seatInnerText=seatButton.innerText;
 if(array.includes(seatInnerText)){return alert(`You cannot buy this ${seatInnerText} ticket again`)}
 array.push(seatInnerText);
+
 
 
 
@@ -89,6 +95,7 @@ setInnerText('grandTotal',discount15Total);
 getId('DiscountContainer').classList.remove('hidden');
 setInnerText('discount15Display','Discount');
 setInnerText('discount15DisplayTaka',discount15);
+getId('copuponAndApply').classList.add('hidden');
         }
         else if(InputValue==='Couple 20'){
 
@@ -98,6 +105,7 @@ setInnerText('discount15DisplayTaka',discount15);
             getId('DiscountContainer').classList.remove('hidden');
             setInnerText('discount15Display','Discount');
             setInnerText('discount15DisplayTaka',discount15);
+            getId('copuponAndApply').classList.add('hidden')
 
         }
         else{
